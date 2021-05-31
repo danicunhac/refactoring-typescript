@@ -1,12 +1,11 @@
-import { useEffect, useRef, useState, useCallback } from 'react';
-
 import { useField } from '@unform/core';
-
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Container } from './styles';
 
 interface InputProps {
   name: string;
-  icon: any;
+  icon?: any;
+  placeholder: string;
 }
 
 const Input = ({ name, icon: Icon, ...rest }: InputProps) => {
